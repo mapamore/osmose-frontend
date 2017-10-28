@@ -4,7 +4,7 @@ Mapillary = L.VectorGrid.Protobuf.extend({
 
   initialize: function (client_id) {
     this._client_id = client_id;
-    L.VectorGrid.Protobuf.prototype.initialize.call(this, "https://d2munx5tg0hw47.cloudfront.net/tiles/{z}/{x}/{y}.mapbox", {
+    L.VectorGrid.Protobuf.prototype.initialize.call(this, "http://d25uarhxywzl1j.cloudfront.net/v0.1/{z}/{x}/{y}.mvt", {
       getIDForLayerFeature: function(feature) {
         return feature.properties.id;
       },
